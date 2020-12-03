@@ -16,6 +16,8 @@ By default it will report the following events but those can be extended:
 2. Copy the content of `hooks.json.sample` on 
    `<env>/lib/hooks/hooks.json` to inform Flor about the new hooks.
    This is where you can extend the events you want to monitor.
+     - Remember to keep the quotes around `points` (e.g. `point: "return"`) to
+     avoid issues with reserved keywords.
 3. By default Pollen will contact your hook handler at
    `http://localhost:3000/hookhandler/`. This can be controlled through
    Flor/Flack's configuration (`<env>/etc/conf.json`) as follow:
